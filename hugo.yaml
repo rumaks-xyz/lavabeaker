@@ -1,8 +1,8 @@
 baseURL: http://0.0.0.0:1313/
-title: Documentation
+title: Chemtopia
 theme: hugo-book
 
-copyright: "This is a copyright placeholder"
+copyright: "All content available under [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/)"
 
 # Book configuration
 disablePathToLower: true
@@ -16,7 +16,7 @@ markup:
   tableOfContents:
     startLevel: 1
   highlight:
-    style: base16-snazzy
+    noClasses: false
 
 # Multi-lingual mode config
 # There are different options to translate files
@@ -38,18 +38,10 @@ markup:
 #     weight: 3
 
 menu:
-  home:
-    - name: "Documentation"
-      pageRef: "/docs/"
-      weight: 10
-    - name: "Github"
-      url: "https://github.com/alex-shpak/hugo-book/"
-      weight: 20
-
   # before: []
   after:
     - name: "Github"
-      url: "https://github.com/alex-shpak/hugo-book"
+      url: "https://github.com/rumaks-xyz/chemtopia"
       weight: 10
 
 taxonomies:
@@ -67,11 +59,11 @@ params:
 
   # (Optional, default favicon.png) Set the path to a favicon file.
   # If the favicon is /static/favicon.png then the path would be favicon.png
-  # BookFavicon: "favicon.png"
+  BookFavicon: "logo.svg"
 
   # (Optional, default none) Set the path to a logo for the book.
   # If the logo is /static/logo.png then the path would be logo.png
-  # BookLogo: /logo.png
+  BookLogo: /logo.svg
 
   # (Optional, default docs) Specify root page to render child pages as menu.
   # Page is resoled by .GetPage function: https://gohugo.io/functions/getpage/
