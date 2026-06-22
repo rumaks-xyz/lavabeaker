@@ -1,5 +1,5 @@
 baseURL: http://0.0.0.0:1313/
-title: Chemtopia
+title: Lavabeaker Institute
 theme: hugo-book
 
 copyright: "All content available under [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/)"
@@ -41,7 +41,7 @@ menu:
   # before: []
   after:
     - name: "Github"
-      url: "https://github.com/rumaks-xyz/chemtopia"
+      url: "https://github.com/rumaks-xyz/lavabeaker"
       weight: 10
 
 taxonomies:
