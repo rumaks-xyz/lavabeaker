@@ -1,16 +1,25 @@
 # bru stasis
 
 > [!NOTE]
-> did you know that i came up with this
+> hi
 
-> [!TIP]
-> it's true
+here are some reactions
 
-> [!IMPORTANT]
-> i'm so smart
+{{< reaction
+    reactants="1, carbon, #22282b; 1, oxygen, #c4f5ff; 1, sugar, #ffffff"
+    products="3, bicaridine, #ffaa00"
+>}}
 
-> [!WARNING]
-> please please pay attention to me
+{{< reaction
+    reactants="1, chlorine, #a2ff00; 3, fluorine, #ba85cc"
+    products="4, chlorine trifluoride, #ffc8c8; explosion"
+    conditions="at least 370K"
+>}}
 
-> [!CAUTION]
-> im good at chem
+{{< reaction
+    reactants="2, ammonia blood, #7a8bf2"
+    products="1, ammonia, #77b58e"
+    conditions="stir; at least 370K"
+>}}
+
+goodbye

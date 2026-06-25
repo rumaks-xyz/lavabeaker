@@ -1,0 +1,44 @@
+<div class="reaction">
+	<div>
+	{{ $reactants := split (.Get "reactants") ";" }}
+	{{ range $reactants }}
+		{{ $reactant := split (trim . " ") "," }}
+		<div>
+			{{ if eq (len $reactant) 1 }}
+			<span class="reagent">{{ index $reactant 0 }}</span>
+			{{ else }}
+			<span class="reagent amount">{{ index $reactant 0 }}</span>
+			<span class="reagent name" {{if ge (len $reactant) 3 }}style="background-color: {{ index $reactant 2 }}33;"{{ end }}>{{ index $reactant 1 }}</span>
+			{{ end }}
+		</div>
+	{{ end }}
+	</div>
+
+	<div class="reaction-arrow">
+	{{ $conditions := split (.Get "conditions") ";" }}
+	{{ $topConditionsN := div (len $conditions) 2 }}
+	{{ range $conditions | first $topConditionsN }}
+		<small>{{ . }}</small>
+	{{ end }}
+		<img src="/icons/forward.svg" class="book-icon reaction-arrow">
+	{{ $bottomConditionsN := sub (len $conditions) $topConditionsN }}
+	{{ range $conditions | last $bottomConditionsN }}
+		<small>{{ . }}</small>
+	{{ end }}
+	</div>
+
+	<div>
+	{{ $products := split (.Get "products") ";" }}
+	{{ range $products }}
+		{{ $product := split (trim . " ") "," }}
+		<div>
+			{{ if eq (len $product) 1 }}
+			<span class="reagent">{{ index $product 0 }}</span>
+			{{ else }}
+			<span class="reagent amount">{{ index $product 0 }}</span>
+			<span class="reagent name" {{if ge (len $product) 3 }}style="background-color: {{ index $product 2 }}33;"{{ end }}>{{ index $product 1 }}</span>
+			{{ end }}
+		</div>
+	{{ end }}
+	</div>
+</div>

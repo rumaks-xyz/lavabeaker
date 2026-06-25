@@ -3,6 +3,69 @@
 // @import "plugins/numbered";
 // @import "plugins/scrollbars";
 
+// .reagent-name {
+//   padding: .25rem .4rem .25rem .5rem;
+//   background-color: rgba(var(--reagent-color), 0.1);
+//   border-inline-start: .25rem solid rgba(var(--reagent-color), 1);
+//   border-radius: var(--border-radius) 0 0 var(--border-radius);
+// }
+//
+// .reagent-amount {
+//   padding: .25rem .5rem .25rem .4rem;
+//   background-color: var(--gray-100);
+//   border-radius: 0 var(--border-radius) var(--border-radius) 0;
+// }
+
+.reaction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.reaction > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.reaction > div > div {
+  display: flex;
+}
+
+.reagent {
+  margin: .1rem 0;
+  display: inline-flex;
+  padding: .1rem .5rem;
+  border-radius: var(--border-radius);
+  background-color: var(--gray-200);
+}
+
+.reagent.amount {
+  padding-right: .4rem;
+  border-radius: var(--border-radius) 0 0 var(--border-radius);
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  align-items: center;
+}
+
+.reagent.name {
+  padding-left: .4rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: var(--gray-100);
+}
+
+.reaction-arrow {
+  // flex-grow: 1;
+  align-items: center;
+  margin: 0 1.5rem;
+}
+
+.reaction-arrow > img {
+  height: 1em;
+  width: 1em;
+}
+
 @mixin theme-gruvbox-rumaks {
   --body-background: #000000;
   --body-background-tint: none;
