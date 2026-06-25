@@ -20,7 +20,7 @@
 	{{ range $conditions | first $topConditionsN }}
 		<small>{{ . }}</small>
 	{{ end }}
-		<img src="/icons/forward.svg" class="book-icon reaction-arrow">
+		<img src="{{ partial "docs/icon" "forward" }}" class="book-icon reaction-arrow">
 	{{ $bottomConditionsN := sub (len $conditions) $topConditionsN }}
 	{{ range $conditions | last $bottomConditionsN }}
 		<small>{{ . }}</small>
